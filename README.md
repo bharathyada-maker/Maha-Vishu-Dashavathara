@@ -17,7 +17,8 @@ Experience the full production online directly in your browser:
 👉 **[Launch Dashavatara Web Theater](https://bharathyada-maker.github.io/Maha-Vishu-Dashavathara/)**
 
 - **Instant Language Switching:** Seamlessly switch between **English**, **తెలుగు (Telugu)**, **हिन्दी (Hindi)**, **தமிழ் (Tamil)**, and **ಕನ್ನಡ (Kannada)** without losing your playback timestamp.
-- **Synchronized Subtitles:** Native `.vtt` subtitles for all 5 languages.
+- **Closed Captions (CC) ON/OFF:** Toggle subtitles on or off at any moment with the **[CC]** button or keyboard shortcut **`C`** to enjoy an unobstructed, pristine full-screen cinematic visual.
+- **Synchronized Subtitles:** Native `.vtt` subtitles for all 5 languages when CC is enabled.
 - **Chapter Quick-Jump:** Instant navigation through Prologue, the 10 Avatars, and the Eternal Finale.
 - **Four Yuga Modes:** Watch the full movie or experience each cosmological Yuga separately.
 

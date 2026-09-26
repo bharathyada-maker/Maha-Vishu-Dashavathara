@@ -129,22 +129,54 @@
       aspect-ratio: 16 / 9;
     }
 
+    /* Floating CC Button on Video Stage */
+    .floating-cc-btn {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      z-index: 10;
+      background: rgba(18, 20, 34, 0.85);
+      backdrop-filter: blur(8px);
+      border: 1px solid var(--card-border);
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 800;
+      padding: 6px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      letter-spacing: 1px;
+      transition: all 0.25s ease;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .floating-cc-btn:hover {
+      border-color: var(--gold);
+      color: #fff;
+    }
+    .floating-cc-btn.active {
+      background: rgba(56, 44, 16, 0.9);
+      border-color: var(--gold);
+      color: var(--gold-light);
+      box-shadow: 0 0 12px var(--gold-glow);
+    }
+
     /* Floating Toast Notification */
     .toast {
       position: absolute;
-      top: 20px;
-      right: 20px;
+      top: 16px;
+      right: 16px;
       background: rgba(18, 20, 34, 0.94);
       border: 1px solid var(--gold);
       color: var(--gold-light);
-      padding: 10px 18px;
+      padding: 9px 16px;
       border-radius: 8px;
-      font-size: 13px;
-      letter-spacing: 1px;
+      font-size: 12.5px;
+      letter-spacing: 0.5px;
       box-shadow: 0 8px 24px rgba(0,0,0,0.7), 0 0 15px var(--gold-glow);
       z-index: 10;
       opacity: 0;
-      transform: translateY(-10px);
+      transform: translateY(-8px);
       transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
       pointer-events: none;
       display: flex;
@@ -187,7 +219,7 @@
       box-shadow: 0 4px 15px rgba(212, 175, 55, 0.25);
     }
 
-    /* Multilingual Switcher Bar */
+    /* Multilingual Switcher & CC Bar */
     .lang-bar {
       display: flex;
       flex-wrap: wrap;
@@ -214,6 +246,7 @@
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
+      align-items: center;
     }
     .btn-lang {
       background: #141726;
@@ -239,6 +272,53 @@
       color: #fff;
       font-weight: 700;
       box-shadow: 0 4px 16px rgba(212, 175, 55, 0.45);
+    }
+
+    /* CC Toggle Button */
+    .cc-control {
+      display: flex;
+      align-items: center;
+    }
+    .btn-cc {
+      background: #141726;
+      color: var(--muted);
+      border: 1px solid #2f344e;
+      padding: 9px 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 13px;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 700;
+    }
+    .btn-cc:hover {
+      border-color: var(--gold);
+      color: var(--text);
+    }
+    .btn-cc .cc-badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 2px 6px;
+      border-radius: 4px;
+      background: #252840;
+      color: var(--muted);
+      border: 1px solid #3d3b4a;
+      letter-spacing: 0.5px;
+      transition: all 0.2s;
+    }
+    .btn-cc.active {
+      background: linear-gradient(135deg, #3d3012, #634a17);
+      border-color: var(--gold);
+      color: var(--gold-light);
+      box-shadow: 0 0 14px var(--gold-glow);
+    }
+    .btn-cc.active .cc-badge {
+      background: var(--gold);
+      color: #000;
+      border-color: var(--gold-light);
     }
 
     /* Chapter Quick Jump Grid */
@@ -415,9 +495,11 @@
       text-decoration: underline;
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 768px) {
       body { padding: 12px; }
-      .lang-bar { flex-direction: column; align-items: flex-start; }
+      .lang-bar { flex-direction: column; align-items: stretch; gap: 12px; }
+      .lang-buttons { justify-content: flex-start; }
+      .cc-control { justify-content: flex-end; }
       .chapters-grid { grid-template-columns: repeat(2, 1fr); }
       .lore-box { padding: 16px; }
     }
@@ -444,7 +526,13 @@
     <div class="theater-container">
       <div class="ambient-glow" id="ambientGlow"></div>
       <div class="theater">
+        <!-- Quick floating CC toggle button on top-left of video -->
+        <button class="floating-cc-btn active" id="floatingCC" onclick="toggleCaptions()" title="Toggle Captions ON/OFF (Shortcut: C)">
+          <span>CC</span>
+        </button>
+
         <div class="toast" id="toast">Language Switched</div>
+        
         <video id="player" controls playsinline preload="metadata" poster="title_cards/00_prologue.jpg">
           <source id="videoSource" src="Dashavatara_Full_Movie_English.mp4" type="video/mp4">
           <track label="English" kind="subtitles" srclang="en" src="subtitles/dashavatara_en.vtt" default>
@@ -456,11 +544,11 @@
       </div>
     </div>
 
-    <!-- Multilingual Dedicated Movie Switcher -->
+    <!-- Multilingual Dedicated Movie Switcher & CC Controls -->
     <div class="lang-bar">
       <div class="lang-label">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-        Narration & Subtitle Language:
+        Narration Language:
       </div>
       <div class="lang-buttons">
         <button class="btn-lang active" onclick="setLanguage('en', 'English', this)">🇬🇧 English</button>
@@ -468,6 +556,12 @@
         <button class="btn-lang" onclick="setLanguage('hi', 'Hindi (हिन्दी)', this)">🇮🇳 हिन्दी (Hindi)</button>
         <button class="btn-lang" onclick="setLanguage('ta', 'Tamil (தமிழ்)', this)">🇮🇳 தமிழ் (Tamil)</button>
         <button class="btn-lang" onclick="setLanguage('kn', 'Kannada (ಕನ್ನಡ)', this)">🇮🇳 ಕನ್ನಡ (Kannada)</button>
+      </div>
+      <div class="cc-control">
+        <button class="btn-cc active" id="btnCC" onclick="toggleCaptions()" title="Toggle Closed Captions (Shortcut: C)">
+          <span class="cc-badge">CC</span>
+          <span id="ccText">Captions: ON</span>
+        </button>
       </div>
     </div>
 
@@ -567,6 +661,7 @@
     const toast = document.getElementById('toast');
     let currentLang = 'en';
     let currentMode = 'full';
+    let captionsEnabled = true;
 
     const LANG_MOVIES = {
       'en': 'Dashavatara_Full_Movie_English.mp4',
@@ -690,7 +785,55 @@
     function showToast(msg) {
       toast.textContent = msg;
       toast.classList.add('show');
-      setTimeout(() => toast.classList.remove('show'), 2800);
+      setTimeout(() => toast.classList.remove('show'), 2600);
+    }
+
+    function getCurrentLangName() {
+      const names = {
+        'en': 'English',
+        'te': 'Telugu (తెలుగు)',
+        'hi': 'Hindi (हिन्दी)',
+        'ta': 'Tamil (தமிழ்)',
+        'kn': 'Kannada (ಕನ್ನಡ)'
+      };
+      return names[currentLang] || currentLang;
+    }
+
+    function toggleCaptions() {
+      captionsEnabled = !captionsEnabled;
+      updateCaptionsDisplay();
+      if (captionsEnabled) {
+        showToast(`Captions: ON (${getCurrentLangName()})`);
+      } else {
+        showToast("Captions: OFF (Clean Screen Mode)");
+      }
+    }
+
+    function updateCaptionsDisplay() {
+      const btnCC = document.getElementById('btnCC');
+      const ccText = document.getElementById('ccText');
+      const floatingCC = document.getElementById('floatingCC');
+
+      if (captionsEnabled) {
+        if (btnCC) btnCC.classList.add('active');
+        if (ccText) ccText.textContent = 'Captions: ON';
+        if (floatingCC) floatingCC.classList.add('active');
+
+        // Enable active language subtitle track
+        for (let i = 0; i < player.textTracks.length; i++) {
+          const track = player.textTracks[i];
+          track.mode = (track.language === currentLang) ? 'showing' : 'disabled';
+        }
+      } else {
+        if (btnCC) btnCC.classList.remove('active');
+        if (ccText) ccText.textContent = 'Captions: OFF';
+        if (floatingCC) floatingCC.classList.remove('active');
+
+        // Turn OFF all subtitle tracks completely for a clean screen
+        for (let i = 0; i < player.textTracks.length; i++) {
+          player.textTracks[i].mode = 'disabled';
+        }
+      }
     }
 
     function setLanguage(lang, langDisplayName, btn) {
@@ -705,11 +848,8 @@
         player.src = LANG_MOVIES[lang];
         player.currentTime = curTime;
         
-        // Sync subtitles
-        for (let i = 0; i < player.textTracks.length; i++) {
-          const track = player.textTracks[i];
-          track.mode = (track.language === lang) ? 'showing' : 'disabled';
-        }
+        // Sync subtitles only if captions are enabled
+        updateCaptionsDisplay();
         
         if (wasPlaying) {
           player.play().catch(e => console.log('Autoplay:', e));
@@ -735,6 +875,7 @@
       const wasPlaying = !player.paused;
       player.src = LANG_MOVIES[currentLang];
       player.load();
+      updateCaptionsDisplay();
       if (wasPlaying) player.play();
       showToast("Viewing Full Master Movie");
     }
@@ -746,6 +887,7 @@
       const wasPlaying = !player.paused;
       player.src = src;
       player.load();
+      updateCaptionsDisplay();
       if (wasPlaying) player.play();
       showToast(`Loaded: ${title}`);
     }
@@ -788,12 +930,15 @@
       }
     });
 
-    // Keyboard Shortcuts (Space, F, M, Left, Right)
+    // Keyboard Shortcuts (Space, C, F, M, Left, Right)
     document.addEventListener('keydown', (e) => {
       if (['INPUT', 'TEXTAREA'].includes(document.activeElement.tagName)) return;
       if (e.code === 'Space') {
         e.preventDefault();
         player.paused ? player.play() : player.pause();
+      } else if (e.code === 'KeyC') {
+        e.preventDefault();
+        toggleCaptions();
       } else if (e.code === 'KeyF') {
         e.preventDefault();
         if (!document.fullscreenElement) {
