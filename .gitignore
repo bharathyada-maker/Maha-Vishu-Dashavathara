@@ -1,0 +1,28 @@
+# Temporary and build directories
+temp_seamless/
+temp_timed_audio/
+master_audio/
+narration_audio*/
+__pycache__/
+*.pyc
+
+# Raw working video cuts and recaps
+01 to 03 Matshya-Kurma-Varaha.mp4
+04. Narashima 0.31 to 0.41.mp4
+05. Actual Vamaha 0.31 to 0.41.mp4
+06. Prashurama 0.31 to 0.41.mp4
+07. Rama 0.31 to 0.41.mp4
+08. Krishna 0.31 to 0.41.mp4
+09. Buddha 0.31 to 0.41.mp4
+10. Kalki 0.31 to 0.41.mp4
+04 Narasimha.mp4
+05 Vamana.mp4
+06 Prashurama.mp4
+07 Rama.mp4
+08 Krishna.mp4
+09 Buddha.mp4
+10 Kalki.mp4
+Narasimha 0.31 to 0.41.mp4
+Uptovaraha.mp4
+all4.mp4
+Dashavatara_Full_Movie_1080p.mp4

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashavatara — The Ten Descents of the Divine (Master Multilingual Production)</title>
+  <style>
+    :root {
+      --bg: #090a10;
+      --card: #121422;
+      --card-border: #2a251a;
+      --gold: #d4af37;
+      --gold-light: #f7e096;
+      --text: #e8e6e1;
+      --muted: #9e9b92;
+      --accent: #ff8c00;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Georgia', 'Nirmala UI', serif; }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 24px;
+    }
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 24px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--card-border);
+    }
+    .om {
+      font-size: 28px;
+      color: var(--gold);
+      margin-bottom: 6px;
+    }
+    h1 {
+      font-size: 36px;
+      letter-spacing: 4px;
+      color: var(--gold-light);
+      text-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+      margin-bottom: 4px;
+    }
+    .subtitle {
+      font-size: 15px;
+      letter-spacing: 2px;
+      color: var(--muted);
+      text-transform: uppercase;
+    }
+    
+    /* Video Stage */
+    .theater {
+      background: #000;
+      border: 2px solid var(--card-border);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 12px 40px rgba(0,0,0,0.8), 0 0 30px rgba(212, 175, 55, 0.15);
+      position: relative;
+    }
+    video {
+      width: 100%;
+      max-height: 680px;
+      display: block;
+      background: #000;
+    }
+
+    /* Multilingual Switcher Bar */
+    .lang-bar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--card);
+      border: 1px solid var(--card-border);
+      border-radius: 8px;
+      padding: 12px 18px;
+      margin: 20px 0;
+      gap: 12px;
+    }
+    .lang-label {
+      font-size: 14px;
+      color: var(--gold);
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .lang-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .btn-lang {
+      background: #1c1d2e;
+      color: var(--text);
+      border: 1px solid #3d362a;
+      padding: 8px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .btn-lang:hover {
+      border-color: var(--gold);
+      color: var(--gold-light);
+    }
+    .btn-lang.active {
+      background: linear-gradient(135deg, #3d3012, #684f18);
+      border-color: var(--gold-light);
+      color: #fff;
+      font-weight: bold;
+      box-shadow: 0 0 12px rgba(212, 175, 55, 0.4);
+    }
+    
+    /* View Mode Tabs */
+    .mode-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+    .btn-mode {
+      background: #151624;
+      color: var(--muted);
+      border: 1px solid #2a2838;
+      padding: 8px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 13px;
+      letter-spacing: 1px;
+      transition: all 0.2s;
+    }
+    .btn-mode.active {
+      background: #252840;
+      color: var(--gold-light);
+      border-color: var(--gold);
+    }
+
+    /* Chapter Quick Jump */
+    .chapters-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 12px;
+      margin: 24px 0;
+    }
+    .chapter-card {
+      background: var(--card);
+      border: 1px solid var(--card-border);
+      border-radius: 8px;
+      padding: 12px 14px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .chapter-card:hover {
+      border-color: var(--gold);
+      background: #1a1c30;
+      transform: translateY(-2px);
+    }
+    .ch-num {
+      font-size: 12px;
+      color: var(--gold);
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .ch-name {
+      font-size: 14px;
+      color: var(--text);
+      font-weight: 500;
+    }
+    .ch-time {
+      font-size: 11px;
+      color: var(--muted);
+    }
+
+    /* Lore Box */
+    .lore-box {
+      background: var(--card);
+      border: 1px solid var(--card-border);
+      border-left: 4px solid var(--gold);
+      border-radius: 8px;
+      padding: 18px 24px;
+      margin-top: 24px;
+    }
+    .lore-title {
+      font-size: 18px;
+      color: var(--gold-light);
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+    .lore-text {
+      font-size: 14px;
+      color: #ccc;
+      line-height: 1.7;
+    }
+    .sloka {
+      font-style: italic;
+      color: var(--gold);
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--card-border);
+      color: var(--muted);
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="om">ॐ</div>
+      <h1>DASHAVATARA</h1>
+      <div class="subtitle">The Ten Descents of the Divine • 1080p Master Multilingual Edition</div>
+    </header>
+
+    <!-- Mode Selector -->
+    <div class="mode-bar">
+      <button class="btn-mode active" id="btnModeFull" onclick="loadMode('full', this)">Full Master Movie (1080p)</button>
+      <button class="btn-mode" onclick="loadVideo('Dashavatara_Part1_Satya_Yuga.mp4', 'Part 1: Satya Yuga', this)">Part 1: Satya Yuga</button>
+      <button class="btn-mode" onclick="loadVideo('Dashavatara_Part2_Treta_Yuga.mp4', 'Part 2: Treta Yuga', this)">Part 2: Treta Yuga</button>
+      <button class="btn-mode" onclick="loadVideo('Dashavatara_Part3_Dvapara_Yuga.mp4', 'Part 3: Dvapara Yuga', this)">Part 3: Dvapara Yuga</button>
+      <button class="btn-mode" onclick="loadVideo('Dashavatara_Part4_Kali_Yuga_Finale.mp4', 'Part 4: Kali Yuga & Finale', this)">Part 4: Kali Yuga</button>
+    </div>
+
+    <!-- Theater Video -->
+    <div class="theater">
+      <video id="player" controls playsinline poster="title_cards/00_prologue.jpg">
+        <source id="videoSource" src="Dashavatara_Full_Movie_English.mp4" type="video/mp4">
+        <track label="English" kind="subtitles" srclang="en" src="subtitles/dashavatara_en.vtt" default>
+        <track label="తెలుగు (Telugu)" kind="subtitles" srclang="te" src="subtitles/dashavatara_te.vtt">
+        <track label="हिन्दी (Hindi)" kind="subtitles" srclang="hi" src="subtitles/dashavatara_hi.vtt">
+        <track label="தமிழ் (Tamil)" kind="subtitles" srclang="ta" src="subtitles/dashavatara_ta.vtt">
+        <track label="ಕನ್ನಡ (Kannada)" kind="subtitles" srclang="kn" src="subtitles/dashavatara_kn.vtt">
+      </video>
+    </div>
+
+    <!-- Multilingual Dedicated Movie Switcher -->
+    <div class="lang-bar">
+      <div class="lang-label">Choose Narration & Subtitle Language:</div>
+      <div class="lang-buttons">
+        <button class="btn-lang active" onclick="setLanguage('en', this)">🇬🇧 English</button>
+        <button class="btn-lang" onclick="setLanguage('te', this)">🇮🇳 తెలుగు (Telugu)</button>
+        <button class="btn-lang" onclick="setLanguage('hi', this)">🇮🇳 हिन्दी (Hindi)</button>
+        <button class="btn-lang" onclick="setLanguage('ta', this)">🇮🇳 தமிழ் (Tamil)</button>
+        <button class="btn-lang" onclick="setLanguage('kn', this)">🇮🇳 ಕನ್ನಡ (Kannada)</button>
+      </div>
+    </div>
+
+    <!-- Chapter Navigation -->
+    <div class="chapters-grid">
+      <div class="chapter-card" onclick="jumpTo(0.0)">
+        <span class="ch-num">Prologue</span>
+        <span class="ch-name">Maha Vishnu</span>
+        <span class="ch-time">00:00</span>
+      </div>
+      <div class="chapter-card" onclick="jumpTo(13.0)">
+        <span class="ch-num">I. Matsya</span>
+        <span class="ch-name">The Divine Fish</span>
+        <span class="ch-time">00:13</span>
+      </div>
+      <div class="chapter-card" onclick="jumpTo(20.0)">
+        <span class="ch-num">II. Kurma</span>
+        <span class="ch-name">The Foundation</span>
+        <span class="ch-time">00:20</span>
+      </div>
+      <div class="chapter-card" onclick="jumpTo(29.0)">
+        <span class="ch-num">III. Varaha</span>
+        <span class="ch-name">The Boar</span>
+        <span class="ch-time">00:29</span>
+      </div>
+      <div class="chapter-card" onclick="jumpTo(38.0)">
+        <span class="ch-num">IV. Narasimha</span>
+        <span class="ch-name">The Man-Lion</span>
+        <span class="ch-time">00:38</span>
+      </div>
+      <div class="chapter-card" onclick="jumpTo(47.0)">
+        <span class="ch-num">V. Vamana</span>
+        <span class="ch-name">The Dwarf Sage</span>
+        <span class="ch-time">00:47</span>
+      </div>
+      <div class="chapter-card" onclick="jumpTo(56.0)">
+        <span class="ch-num">VI. Parashurama</span>
+        <span class="ch-name">The Warrior Sage</span>
+        <span class="ch-time">00:56</span>
+      </div>
+      <div class="chapter-card" onclick="jumpTo(65.0)">
+        <span class="ch-num">VII. Rama</span>
+        <span class="ch-name">Embodiment of Dharma</span>
+        <span class="ch-time">01:05</span>
+      </div>
+      <div class="chapter-card" onclick="jumpTo(74.0)">
+        <span class="ch-num">VIII. Krishna</span>
+        <span class="ch-name">Divine Wisdom</span>
+        <span class="ch-time">01:14</span>
+      </div>
+      <div class="chapter-card" onclick="jumpTo(83.0)">
+        <span class="ch-num">IX. Buddha</span>
+        <span class="ch-name">Path of Compassion</span>
+        <span class="ch-time">01:23</span>
+      </div>
+      <div class="chapter-card" onclick="jumpTo(92.0)">
+        <span class="ch-num">X. Kalki</span>
+        <span class="ch-name">The Renewal</span>
+        <span class="ch-time">01:32</span>
+      </div>
+      <div class="chapter-card" onclick="jumpTo(101.0)">
+        <span class="ch-num">Finale</span>
+        <span class="ch-name">The Eternal Cycle</span>
+        <span class="ch-time">01:41</span>
+      </div>
+    </div>
+
+    <!-- Active Lore & Sanskrit Shloka Box -->
+    <div class="lore-box">
+      <div class="lore-title" id="loreTitle">DASHAVATARA — The Eternal Cosmic Cycle</div>
+      <div class="lore-text" id="loreDesc">
+        "Whenever dharma diminishes and adharma prevails, Sri Maha Vishnu manifests Himself. For the protection of the righteous and the restoration of truth, He descends age after age."
+      </div>
+      <div class="sloka" id="loreSloka">
+        यदा यदा हि धर्मस्य ग्लानिर्भवति भारत । अभ्युत्थानमधर्मस्य तदात्मानं सृजाम्यहम् ॥
+      </div>
+    </div>
+
+    <footer>
+      Produced for the Divine Project — Dashavatara • Master 1080p Multilingual Production • Om Namo Narayanaya
+    </footer>
+  </div>
+
+  <script>
+    const player = document.getElementById('player');
+    let currentLang = 'en';
+    let currentMode = 'full';
+
+    const LANG_MOVIES = {
+      'en': 'Dashavatara_Full_Movie_English.mp4',
+      'te': 'Dashavatara_Full_Movie_Telugu.mp4',
+      'hi': 'Dashavatara_Full_Movie_Hindi.mp4',
+      'ta': 'Dashavatara_Full_Movie_Tamil.mp4',
+      'kn': 'Dashavatara_Full_Movie_Kannada.mp4'
+    };
+
+    function setLanguage(lang, btn) {
+      currentLang = lang;
+      document.querySelectorAll('.btn-lang').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      // Seamlessly switch to dedicated movie for selected language
+      if (currentMode === 'full') {
+        const curTime = player.currentTime;
+        const wasPlaying = !player.paused;
+        
+        player.src = LANG_MOVIES[lang];
+        player.currentTime = curTime;
+        
+        // Switch subtitles to match language
+        for (let i = 0; i < player.textTracks.length; i++) {
+          const track = player.textTracks[i];
+          track.mode = (track.language === lang) ? 'showing' : 'disabled';
+        }
+        
+        if (wasPlaying) {
+          player.play().catch(e => console.log('Autoplay:', e));
+        }
+      }
+    }
+
+    function jumpTo(sec) {
+      player.currentTime = sec;
+      player.play().catch(e => console.log(e));
+    }
+
+    function loadMode(mode, btn) {
+      currentMode = mode;
+      document.querySelectorAll('.btn-mode').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const wasPlaying = !player.paused;
+      player.src = LANG_MOVIES[currentLang];
+      player.load();
+      if (wasPlaying) player.play();
+    }
+
+    function loadVideo(src, title, btn) {
+      currentMode = 'part';
+      document.querySelectorAll('.btn-mode').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const wasPlaying = !player.paused;
+      player.src = src;
+      player.load();
+      if (wasPlaying) player.play();
+    }
+  </script>
+</body>
+</html>
