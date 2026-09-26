@@ -1,7 +1,7 @@
 # ॐ DASHAVATARA — The Ten Descents of the Divine
 ### A Mythological Cinematic Experience • Master Multilingual Edition
 
-[![GitHub Pages](https://img.shields.io/badge/Live%20Experience-GitHub%20Pages-gold?style=for-the-badge&logo=github)](https://bharathyada-maker.github.io/Maha-Vishu-Dashavathara-/)
+[![GitHub Pages](https://img.shields.io/badge/Live%20Experience-GitHub%20Pages-gold?style=for-the-badge&logo=github)](https://bharathyada-maker.github.io/Maha-Vishu-Dashavathara/)
 [![Resolution](https://img.shields.io/badge/Resolution-1080p%20Full%20HD-blue?style=for-the-badge)]()
 [![Languages](https://img.shields.io/badge/Languages-Telugu%20%7C%20Hindi%20%7C%20Tamil%20%7C%20Kannada%20%7C%20English-darkgreen?style=for-the-badge)]()
 [![License](https://img.shields.io/badge/License-Creative%20Commons%20BY--NC%204.0-orange?style=for-the-badge)]()
@@ -14,7 +14,7 @@
 ## 🌟 Live Interactive Theater
 
 Experience the full production online directly in your browser:  
-👉 **[Launch Dashavatara Web Theater](https://bharathyada-maker.github.io/Maha-Vishu-Dashavathara-/)**
+👉 **[Launch Dashavatara Web Theater](https://bharathyada-maker.github.io/Maha-Vishu-Dashavathara/)**
 
 - **Instant Language Switching:** Seamlessly switch between **English**, **తెలుగు (Telugu)**, **हिन्दी (Hindi)**, **தமிழ் (Tamil)**, and **ಕನ್ನಡ (Kannada)** without losing your playback timestamp.
 - **Synchronized Subtitles:** Native `.vtt` subtitles for all 5 languages.
