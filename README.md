@@ -6,7 +6,7 @@
 [![Languages](https://img.shields.io/badge/Languages-Telugu%20%7C%20Hindi%20%7C%20Tamil%20%7C%20Kannada%20%7C%20English-darkgreen?style=for-the-badge)]()
 [![License](https://img.shields.io/badge/License-Creative%20Commons%20BY--NC%204.0-orange?style=for-the-badge)]()
 
-> *"Whenever dharma diminishes and adharma prevails, Sree Maha Vishu manifests Himself. For the protection of the righteous, the destruction of evil, and the re-establishment of cosmic order, He descends age after age."*  
+> *"Whenever dharma diminishes and adharma prevails, Shree Maha Vishnu manifests Himself. For the protection of the righteous, the destruction of evil, and the re-establishment of cosmic order, He descends age after age."*  
 > — **Bhagavad Gita 4.7–4.8**
 
 ---
@@ -28,7 +28,7 @@ Experience the full production online directly in your browser:
 
 | Chapter | Avatar | Manifestation & Purpose | Yuga |
 |:---:|:---|:---|:---:|
-| **Prologue** | **Sree Maha Vishu** | *Rested upon Ananta in eternal contemplation; the cosmic vow of descent.* | Eternal |
+| **Prologue** | **Shree Maha Vishnu** | *Rested upon Ananta in eternal contemplation; the cosmic vow of descent.* | Eternal |
 | **I** | **Matsya** (మత్స్య / मत्स्य) | The Divine Fish who navigated the primal deluge, preserving life and the sacred Vedas. | Satya Yuga |
 | **II** | **Kurma** (కూర్మ / कूर्म) | The Divine Tortoise who bore Mount Mandara upon His back during the churning of the ocean. | Satya Yuga |
 | **III** | **Varaha** (వరాహ / वराह) | The Boar who plunged into the cosmic abyss and lifted Mother Earth back to eternal light. | Satya Yuga |
@@ -39,7 +39,7 @@ Experience the full production online directly in your browser:
 | **VIII** | **Krishna** (కృష్ణ / कृष्ण) | The Divine Guide who delivered the immortal Bhagavad Gita upon Kurukshetra. | Dvapara Yuga |
 | **IX** | **Buddha** (బుద్ధ / बुद्ध) | The Enlightened One who guided humanity toward inner stillness, compassion, and peace. | Kali Yuga |
 | **X** | **Kalki** (కల్కి / कल्कि) | The Harbinger upon the white steed Devadatta, ending darkness and inaugurating Satya Yuga. | Kali Yuga |
-| **Finale** | **The Eternal Cycle** | *The promise of eternity: Sree Maha Vishu protects the universe. Dharma will rise again.* | Cosmic |
+| **Finale** | **The Eternal Cycle** | *The promise of eternity: Shree Maha Vishnu protects the universe. Dharma will rise again.* | Cosmic |
 
 ---
 
@@ -73,7 +73,7 @@ Experience the full production online directly in your browser:
   - Master encoding with **CRF 17 visually lossless quality** and full macroblock tree optimization (no compression blocks, no banding, no ultrafast blur).
   - **Clean Direct Cuts Between Avatars:** Eliminated lingering dissolving blur between incarnations for maximum visual punch and cinematic pacing.
   - Spatial AI watermark removal (`delogo`) cleanly removing spark artifacts.
-  - Elegant transparent golden lower-third banners introducing each incarnation with **"Sree Maha Vishu"**.
+  - Elegant transparent golden lower-third banners introducing each incarnation with **"Shree Maha Vishnu"**.
 - **Zero Crossover Talk:** Recalibrated timeline with generous acoustic breathing space between chapters across all 5 languages.
 - **Web-Optimized FastStart:** Encoded with `-movflags +faststart` for instantaneous browser playback over GitHub Pages.
 
@@ -114,4 +114,4 @@ $$परित्राणाय\, साधूनां\, विनाशाय
 $$धर्मसंस्थापनार्थाय\, संभवामि\, युगे\, युगे\, ॥$$
 
 ---
-*Produced for the Divine Project — Dashavatara • Dedicated to Sree Maha Vishu • Om Namo Narayanaya*
+*Produced for the Divine Project — Dashavatara • Dedicated to Shree Maha Vishnu • Om Namo Narayanaya*
