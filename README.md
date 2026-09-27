@@ -43,24 +43,38 @@ Experience the full production online directly in your browser:
 
 ---
 
-## 🎬 Master Studio Audio Engineering & Photorealistic Visuals
+## 🎬 Master Studio Audio Engineering & 8K Visual Clarity
 
-- **Paramount Studio Voice Clarity (Fairlight / DaVinci DSP Chain):**
-  - **Voice:** Deep, resonant baritone voice with crisp studio clarity and a warm, reverent timbre, delivered in a slow, measured cadence imbued with heartfelt spiritual devotion and solemn authority.
-  - **High-Pass Filter (Low Cut):** Cut frequencies below 80 Hz to eliminate rumble and acoustic mud.
-  - **Warmth / Body Boost:** Gentle bell curve boost at 250 Hz (+2.2 dB) for vocal fullness, presence, and rich low-end warmth.
-  - **Clarity & Presence Boost:** Wide bell curve boost between 3 kHz – 5 kHz (+2.5 dB at 3.8 kHz) enhancing syllable clarity and crisp consonants.
-  - **Vocal Compression:** Broadcast vocal compression (3.5:1 ratio, medium 15ms attack, smooth 120ms release) keeping dialogue bold, forward, and consistent.
-  - **Cathedral / Temple Hall Reverb:** 12% wet blend of authentic Temple Hall acoustic reflection with lengthened decay, providing a sacred, timeless atmosphere without sacrificing vocal intelligibility.
-- **Harmonious Devotional Background Bed:**
-  - Sacred ambient score centered on the **136.1 Hz Om root drone** and temple bell chimes.
-  - Subordinated to **-24 dB** with frequency carving between 2.5 kHz – 4.5 kHz, ensuring the voice is 100% crystal-clear and paramount.
-- **Photorealistic Masterwork Visuals (No Lens Distortion, No Dissolving Blur):**
-  - Pristine, wide 1920x1080 Full HD native framing (no artificial 60mm crops, no vignette, no unsharp edge halos).
-  - **Clean Direct Cuts Between Avatars:** Eliminated lingering dissolving overlaps, preserving 100% photorealistic crispness and punch for every divine incarnation.
-  - Spatial AI watermark removal (`delogo`) cleanly erasing spark artifacts.
+- **Majestic Studio Voice-Over Narration (Solemn Baritone):**
+  - **English Cinema Baritone:** Powered by `en-US-BrianMultilingualNeural` delivering a deep, warm, authoritative timbre with pristine diction and zero artificial accent or hiss.
+  - **Multilingual Masters:** Dedicated high-fidelity native voiceover tracks for **Telugu**, **Hindi**, **Tamil**, and **Kannada** honoring the sacred character of each manifestation.
+  - **Clean Studio DSP Mastering Chain:**
+    - High-Pass Filter at 80 Hz cutting rumble and acoustic mud.
+    - Warmth EQ at 220 Hz (+1.8 dB) for chest resonance and vocal fullness.
+    - Syllable Clarity EQ at 4.2 kHz (+2.2 dB) for crisp consonants and pristine articulation.
+    - Transparent broadcast compression (2.5:1 ratio, 20ms attack, 180ms release, 1.2 makeup) keeping vocals upfront, intelligible, and consistent.
+    - Zero metallic echo or phase issues—pure studio capture clarity.
+- **Audible & Authentic Devotional / Carnatic Musical Universe (Panoramic Stereo):**
+  - Continuous 121.0s sacred instrumental score custom-composed for every avatar:
+    - **Matsya:** Primordial waters, oceanic tanpura, and flowing bansuri in Raga Revati.
+    - **Kurma:** Deep mridangam rhythmic pulse and cosmic churn resonance.
+    - **Varaha:** Energetic temple chenda percussion and heroic brass fanfare.
+    - **Narasimha:** Primal heartbeat, dramatic manifestation, and compassionate flute for Prahlada.
+    - **Vamana:** Playful temple chimes, bansuri, and cosmic Trivikrama expansion.
+    - **Parashurama:** Warrior pakhawaj, Rudra resonance, and austere veena.
+    - **Rama:** Noble Mohanam raga leitmotif on Veena & Bansuri with regal mridangam.
+    - **Krishna:** Melodic bansuri, gentle manjira bells, and timeless Gita atmosphere.
+    - **Buddha:** 432 Hz Tibetan singing bowl resonance and luminous bamboo flute.
+    - **Kalki:** Accelerating war drums, triumphant conch blasts, and golden dawn fanfare.
+    - **Finale:** Grand synthesis with conch fanfares and cascading temple bells.
+  - Mixed in wide panoramic stereo at an audible, beautifully balanced level under the voice.
+- **8K Visual Clarity (Visually Lossless 1080p Master):**
+  - Sinc-windowed **Lanczos high-frequency interpolation** scaling (`scale=1920:1080:flags=lanczos`) preserving fine textures and sharp edge acutance.
+  - Master encoding with **CRF 17 visually lossless quality** and full macroblock tree optimization (no compression blocks, no banding, no ultrafast blur).
+  - **Clean Direct Cuts Between Avatars:** Eliminated lingering dissolving blur between incarnations for maximum visual punch and cinematic pacing.
+  - Spatial AI watermark removal (`delogo`) cleanly removing spark artifacts.
   - Elegant transparent golden lower-third banners introducing each incarnation with **"Sree Maha Vishu"**.
-- **Zero Crossover Talk:** Recalibrated timeline with 2.0s to 3.0s clean acoustic breathing space between chapters across all 5 languages.
+- **Zero Crossover Talk:** Recalibrated timeline with generous acoustic breathing space between chapters across all 5 languages.
 - **Web-Optimized FastStart:** Encoded with `-movflags +faststart` for instantaneous browser playback over GitHub Pages.
 
 ---
