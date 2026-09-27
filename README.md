@@ -43,29 +43,24 @@ Experience the full production online directly in your browser:
 
 ---
 
-## 🎬 Senior Editor Enhancements & Master Specifications
+## 🎬 Master Studio Audio Engineering & Photorealistic Visuals
 
-- **World-Class Studio Voiceover:** English narration mastered with studio narrator `ChristopherNeural`—deep, resonant, cinematic documentary gravitas replacing previous heavily accented tones.
-- **Zero Crossover Talk (0.00s Collision):** Recalibrated timeline windows with 1.2s to 3.4s breathing room between all chapters, completely eliminating the previous 0:20s Matsya-to-Kurma speech overlap across all 5 languages.
-- **Sony FX30 60mm Prime Lens Cinematography:**
-  - Intimate medium portrait framing (`crop=1760:990:80:45,scale=1920:1080`) simulating a 60mm cinema prime lens.
-  - S-Cinetone color profile: deep velvety blacks, preserved highlight roll-off, rich golden skin tones, and subtle vignette.
-  - Spatial watermark removal (`delogo`) eliminating all AI spark watermarks.
-- **Sacred Thematic Musical Architecture:**
-  - Master score centered on the **136.1 Hz Om root drone**, with tailored musical identities for every avatar:
-    - *Matsya:* Oceanic conch, low tanpura, and water-like resonance.
-    - *Kurma:* Deep mridangam/pakhawaj pulse of cosmic endurance.
-    - *Varaha:* Primordial drums and subterranean low strings.
-    - *Narasimha:* Thunderous chenda rhythms, tension strings, and fierce divine intervention.
-    - *Vamana:* Gentle flute motif expanding into cosmic Trivikrama grandeur.
-    - *Parashurama:* Resonant warrior percussion and brass stabs of retribution.
-    - *Rama:* Noble carnatic strings and dharmic veena dignity.
-    - *Krishna:* Sweet divine bansuri melody, flute trills, and Gita majesty.
-    - *Buddha:* Meditative Tibetan singing bowls and deep oceanic stillness.
-    - *Kalki:* Galloping rhythmic war drums and apocalyptic brass fanfares.
-    - *Finale:* Grand Dashavatara orchestral culmination with conch fanfare and sacred *Om Namo Narayanaya*.
-- **Continuous Uninterrupted Story Flow:** Seamless 1.0s true optical cross-dissolves (`xfade=transition=dissolve`) between every chapter—no black dips, no jarring cuts.
-- **Extended Finale Moment:** 13.5s extended culmination dissolving into Sree Maha Vishu, golden radiance, Sanskrit shloka typography, and reverberant Om resolution.
+- **Paramount Studio Voice Clarity (Fairlight / DaVinci DSP Chain):**
+  - **Voice:** Deep, resonant baritone voice with crisp studio clarity and a warm, reverent timbre, delivered in a slow, measured cadence imbued with heartfelt spiritual devotion and solemn authority.
+  - **High-Pass Filter (Low Cut):** Cut frequencies below 80 Hz to eliminate rumble and acoustic mud.
+  - **Warmth / Body Boost:** Gentle bell curve boost at 250 Hz (+2.2 dB) for vocal fullness, presence, and rich low-end warmth.
+  - **Clarity & Presence Boost:** Wide bell curve boost between 3 kHz – 5 kHz (+2.5 dB at 3.8 kHz) enhancing syllable clarity and crisp consonants.
+  - **Vocal Compression:** Broadcast vocal compression (3.5:1 ratio, medium 15ms attack, smooth 120ms release) keeping dialogue bold, forward, and consistent.
+  - **Cathedral / Temple Hall Reverb:** 12% wet blend of authentic Temple Hall acoustic reflection with lengthened decay, providing a sacred, timeless atmosphere without sacrificing vocal intelligibility.
+- **Harmonious Devotional Background Bed:**
+  - Sacred ambient score centered on the **136.1 Hz Om root drone** and temple bell chimes.
+  - Subordinated to **-24 dB** with frequency carving between 2.5 kHz – 4.5 kHz, ensuring the voice is 100% crystal-clear and paramount.
+- **Photorealistic Masterwork Visuals (No Lens Distortion, No Dissolving Blur):**
+  - Pristine, wide 1920x1080 Full HD native framing (no artificial 60mm crops, no vignette, no unsharp edge halos).
+  - **Clean Direct Cuts Between Avatars:** Eliminated lingering dissolving overlaps, preserving 100% photorealistic crispness and punch for every divine incarnation.
+  - Spatial AI watermark removal (`delogo`) cleanly erasing spark artifacts.
+  - Elegant transparent golden lower-third banners introducing each incarnation with **"Sree Maha Vishu"**.
+- **Zero Crossover Talk:** Recalibrated timeline with 2.0s to 3.0s clean acoustic breathing space between chapters across all 5 languages.
 - **Web-Optimized FastStart:** Encoded with `-movflags +faststart` for instantaneous browser playback over GitHub Pages.
 
 ---
