@@ -6,7 +6,7 @@
 [![Languages](https://img.shields.io/badge/Languages-Telugu%20%7C%20Hindi%20%7C%20Tamil%20%7C%20Kannada%20%7C%20English-darkgreen?style=for-the-badge)]()
 [![License](https://img.shields.io/badge/License-Creative%20Commons%20BY--NC%204.0-orange?style=for-the-badge)]()
 
-> *"Whenever dharma diminishes and adharma prevails, Sri Maha Vishnu manifests Himself. For the protection of the righteous, the destruction of evil, and the re-establishment of cosmic order, He descends age after age."*  
+> *"Whenever dharma diminishes and adharma prevails, Sree Maha Vishu manifests Himself. For the protection of the righteous, the destruction of evil, and the re-establishment of cosmic order, He descends age after age."*  
 > — **Bhagavad Gita 4.7–4.8**
 
 ---
@@ -28,7 +28,7 @@ Experience the full production online directly in your browser:
 
 | Chapter | Avatar | Manifestation & Purpose | Yuga |
 |:---:|:---|:---|:---:|
-| **Prologue** | **Sri Maha Vishnu** | *Rested upon Ananta in eternal contemplation; the cosmic vow of descent.* | Eternal |
+| **Prologue** | **Sree Maha Vishu** | *Rested upon Ananta in eternal contemplation; the cosmic vow of descent.* | Eternal |
 | **I** | **Matsya** (మత్స్య / मत्स्य) | The Divine Fish who navigated the primal deluge, preserving life and the sacred Vedas. | Satya Yuga |
 | **II** | **Kurma** (కూర్మ / कूर्म) | The Divine Tortoise who bore Mount Mandara upon His back during the churning of the ocean. | Satya Yuga |
 | **III** | **Varaha** (వరాహ / वराह) | The Boar who plunged into the cosmic abyss and lifted Mother Earth back to eternal light. | Satya Yuga |
@@ -39,16 +39,33 @@ Experience the full production online directly in your browser:
 | **VIII** | **Krishna** (కృష్ణ / कृष्ण) | The Divine Guide who delivered the immortal Bhagavad Gita upon Kurukshetra. | Dvapara Yuga |
 | **IX** | **Buddha** (బుద్ధ / बुद्ध) | The Enlightened One who guided humanity toward inner stillness, compassion, and peace. | Kali Yuga |
 | **X** | **Kalki** (కల్కి / कल्कि) | The Harbinger upon the white steed Devadatta, ending darkness and inaugurating Satya Yuga. | Kali Yuga |
-| **Finale** | **The Eternal Cycle** | *The promise of eternity: Dharma will always rise again. Om Namo Narayanaya.* | Cosmic |
+| **Finale** | **The Eternal Cycle** | *The promise of eternity: Sree Maha Vishu protects the universe. Dharma will rise again.* | Cosmic |
 
 ---
 
-## 🎬 Production Highlights & Senior Editor Treatments
+## 🎬 Senior Editor Enhancements & Master Specifications
 
-- **Zero Pauses & Unbroken Continuity:** Built with true optical cross-dissolves (`xfade=transition=dissolve`), avoiding dips to black or dead-air silences between avatars.
-- **Strict Prologue Identity:** Reverently and strictly refers to **"Sri Maha Vishnu"** / **"Maha Vishnu"** in spoken narration and title typography across every language.
-- **Dedicated Independent Language Movies:** No secondary overlapping audio tracks. Each language film is self-contained with its own native narration and sacred background score.
-- **Watermark-Free:** Bottom-right AI sparkle watermark cleanly removed via spatial video reconstruction (`delogo`).
+- **World-Class Studio Voiceover:** English narration mastered with studio narrator `ChristopherNeural`—deep, resonant, cinematic documentary gravitas replacing previous heavily accented tones.
+- **Zero Crossover Talk (0.00s Collision):** Recalibrated timeline windows with 1.2s to 3.4s breathing room between all chapters, completely eliminating the previous 0:20s Matsya-to-Kurma speech overlap across all 5 languages.
+- **Sony FX30 60mm Prime Lens Cinematography:**
+  - Intimate medium portrait framing (`crop=1760:990:80:45,scale=1920:1080`) simulating a 60mm cinema prime lens.
+  - S-Cinetone color profile: deep velvety blacks, preserved highlight roll-off, rich golden skin tones, and subtle vignette.
+  - Spatial watermark removal (`delogo`) eliminating all AI spark watermarks.
+- **Sacred Thematic Musical Architecture:**
+  - Master score centered on the **136.1 Hz Om root drone**, with tailored musical identities for every avatar:
+    - *Matsya:* Oceanic conch, low tanpura, and water-like resonance.
+    - *Kurma:* Deep mridangam/pakhawaj pulse of cosmic endurance.
+    - *Varaha:* Primordial drums and subterranean low strings.
+    - *Narasimha:* Thunderous chenda rhythms, tension strings, and fierce divine intervention.
+    - *Vamana:* Gentle flute motif expanding into cosmic Trivikrama grandeur.
+    - *Parashurama:* Resonant warrior percussion and brass stabs of retribution.
+    - *Rama:* Noble carnatic strings and dharmic veena dignity.
+    - *Krishna:* Sweet divine bansuri melody, flute trills, and Gita majesty.
+    - *Buddha:* Meditative Tibetan singing bowls and deep oceanic stillness.
+    - *Kalki:* Galloping rhythmic war drums and apocalyptic brass fanfares.
+    - *Finale:* Grand Dashavatara orchestral culmination with conch fanfare and sacred *Om Namo Narayanaya*.
+- **Continuous Uninterrupted Story Flow:** Seamless 1.0s true optical cross-dissolves (`xfade=transition=dissolve`) between every chapter—no black dips, no jarring cuts.
+- **Extended Finale Moment:** 13.5s extended culmination dissolving into Sree Maha Vishu, golden radiance, Sanskrit shloka typography, and reverberant Om resolution.
 - **Web-Optimized FastStart:** Encoded with `-movflags +faststart` for instantaneous browser playback over GitHub Pages.
 
 ---
@@ -88,4 +105,4 @@ $$परित्राणाय\, साधूनां\, विनाशाय
 $$धर्मसंस्थापनार्थाय\, संभवामि\, युगे\, युगे\, ॥$$
 
 ---
-*Produced for the Divine Project — Dashavatara • Dedicated to Sri Maha Vishnu • Om Namo Narayanaya*
+*Produced for the Divine Project — Dashavatara • Dedicated to Sree Maha Vishu • Om Namo Narayanaya*
