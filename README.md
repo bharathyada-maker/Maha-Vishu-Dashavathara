@@ -54,20 +54,22 @@ Experience the full production online directly in your browser:
     - Syllable Clarity EQ at 4.2 kHz (+2.2 dB) for crisp consonants and pristine articulation.
     - Transparent broadcast compression (2.5:1 ratio, 20ms attack, 180ms release, 1.2 makeup) keeping vocals upfront, intelligible, and consistent.
     - Zero metallic echo or phase issues—pure studio capture clarity.
-- **Audible & Authentic Devotional / Carnatic Musical Universe (Panoramic Stereo):**
-  - Continuous 121.0s sacred instrumental score custom-composed for every avatar:
-    - **Matsya:** Primordial waters, oceanic tanpura, and flowing bansuri in Raga Revati.
-    - **Kurma:** Deep mridangam rhythmic pulse and cosmic churn resonance.
-    - **Varaha:** Energetic temple chenda percussion and heroic brass fanfare.
-    - **Narasimha:** Primal heartbeat, dramatic manifestation, and compassionate flute for Prahlada.
-    - **Vamana:** Playful temple chimes, bansuri, and cosmic Trivikrama expansion.
-    - **Parashurama:** Warrior pakhawaj, Rudra resonance, and austere veena.
-    - **Rama:** Noble Mohanam raga leitmotif on Veena & Bansuri with regal mridangam.
-    - **Krishna:** Melodic bansuri, gentle manjira bells, and timeless Gita atmosphere.
-    - **Buddha:** 432 Hz Tibetan singing bowl resonance and luminous bamboo flute.
-    - **Kalki:** Accelerating war drums, triumphant conch blasts, and golden dawn fanfare.
-    - **Finale:** Grand synthesis with conch fanfares and cascading temple bells.
-  - Mixed in wide panoramic stereo at an audible, beautifully balanced level under the voice.
+- **Audible & Authentic Cinematic Devotional Score (48 kHz, 24-bit Stereo Master):**
+  - Custom orchestrated continuous 121.0s score adhering to the 12-movement master music brief, using authentic acoustic Indian classical and cinematic orchestral instrumentation:
+    - **Prologue (When Dharma Falls):** Sacred cosmic stillness, resonant Shankh (conch) blast, Sa-Pa Tanpura drone, and soft "Om" choral pad.
+    - **Matsya (The Flood):** Deep primordial strings, water pads, hopeful bansuri raga theme, and gentle mridangam pulse.
+    - **Kurma (Cosmic Churning):** Grounded mridangam groove, deep cinematic percussion hits, and noble ascending strings.
+    - **Varaha (Lifting the Earth):** Fierce dark brass swells, heavy drums, and triumphant conch call restoring Bhudevi to light.
+    - **Narasimha (Protection of Devotion):** Solemn prayer drone for Prahlada erupting into an explosive percussion & brass climax, resolving in divine protection.
+    - **Vamana (Three Steps):** Humble sweet bansuri and temple bells blossoming into cosmic Trivikrama strings.
+    - **Parashurama (Power & Duty):** Disciplined warrior-sage mridangam, cinematic drums, and resolute dharmic strings cadence.
+    - **Rama (Dharma in Human Form):** Noble Ayodhya strings, sweet bansuri, sacred Shehnai (Ustad Bismillah Khan), and golden temple bells.
+    - **Krishna (Wisdom on Battlefield):** Tender Vrindavan bansuri motif transitioning into profound Kurukshetra Gita strings and choral radiance.
+    - **Buddha (Compassion & Inner Victory):** Meditative tanpura stillness, distant temple bell chime, and contemplative sparse flute.
+    - **Kalki (Future Dawn):** Dark prophetic Kali Yuga drones building into a thunderous heroic charge with Devadatta's white steed.
+    - **Finale (The Eternal Cycle):** Sublime divine ensemble uniting strings, flute, shehnai, bells, Om choir, and final conch blast fading into eternal silence on "Om Namo Narayanaya".
+  - **Dynamic Dialogue Ducking & Dialogue Pocket EQ:** Music bus dipped -2.5 dB in the 1.5–3.2 kHz dialogue presence zone with transparent 150ms/400ms ducking (-2.5 dB during speech) ensuring zero pumping and total speech clarity.
+  - **Separate Episode Deliverables:** All 12 individual movement tracks preserved in `bgm_episodes/` (48 kHz 24-bit WAV).
 - **8K Visual Clarity (Visually Lossless 1080p Master):**
   - Sinc-windowed **Lanczos high-frequency interpolation** scaling (`scale=1920:1080:flags=lanczos`) preserving fine textures and sharp edge acutance.
   - Master encoding with **CRF 17 visually lossless quality** and full macroblock tree optimization (no compression blocks, no banding, no ultrafast blur).
@@ -100,6 +102,12 @@ Experience the full production online directly in your browser:
 │   ├── dashavatara_hi.vtt
 │   ├── dashavatara_ta.vtt
 │   └── dashavatara_kn.vtt
+├── bgm_episodes/                        # 12 Individual Movement Master BGM WAVs (48 kHz 24-bit)
+│   ├── Dashavatara_BGM_00_Prologue.wav
+│   ├── Dashavatara_BGM_01_Matsya.wav
+│   ├── ... (all 12 avatar movements)
+│   └── Dashavatara_BGM_11_Finale.wav
+├── audio_master_*.mp3                   # 320 kbps High-Fidelity Multilingual Master Mixes
 ├── title_cards/                         # 1080p golden chapter cards
 └── title_banners/                       # Transparent lower-third golden banners
 ```

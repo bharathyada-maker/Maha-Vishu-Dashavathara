@@ -30,3 +30,6 @@ Dashavatara_Clean_1080p_Video.mp4
 sample_*.mp3
 test_*.mp4
 temp_*.mp3
+audio_stems/
+audio_stems_48k/
+audio_master_*.wav
